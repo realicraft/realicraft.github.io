@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Useful Math Tools (WIP)</title>
+        <style>
+            body {
+                background: #ffff00;
+                font-family: sans-serif;
+            }
+            input {
+                display: inline;
+                width: 30px;
+            }
+            p {
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Useful Math Tools</h1>
+        <h2>Slope Calculator</h2>
+        <!-- ID: SL -->
+        <p>Point 1: (</p><input type="number" placeholder="x" id="SLxa"><p>,</p><input type="number" placeholder="y" id="SLya"><p>) Point 2: (</p><input type="number" placeholder="x" id="SLxb"><p>,</p><input type="number" placeholder="y" id="SLyb"><p>)</p><button onClick="SLcalc()">Calculate</button><p id="SLend"></p>
+        <h2>Root Calculator</h2>
+        <!-- ID: RC -->
+        <input type="number" placeholder="a" id="RCa"><p>√ </p><input type="number" placeholder="b" id="RCb"><button onClick="RCcalc()">Calculate</button><p id="RCend"></p>
+        <h2>Quadratic Calacultor</h2>
+        <!-- ID: QC -->
+        <input type="number" placeholder="a" id="QCa"><p>x²+</p><input type="number" placeholder="b" id="QCb"><p>x+</p><input type="number" placeholder="c" id="QCc"><p>=0</p><button onClick="QCcalc1()">Calculate Axis of Symmetry</button><button onClick="QCcalc2()">Calculate Answers</button><p id="QCend1"></p><p> </p><p id="QCend2"></p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            var SLcalc = function () {
+                $SLend = $("#SLend")
+                SLxa = $("#SLxa").val()
+                SLya = $("#SLya").val()
+                SLxb = $("#SLxb").val()
+                SLyb = $("#SLyb").val()
+                SLtop = SLyb - SLya
+                SLbot = SLxb - SLxa
+                if (SLbot == 0) {
+                    $SLend.text("Undefined")
+                } else {
+                    $SLend.text(SLtop / SLbot)
+                }
+            }
+            var RCcalc = function () {
+                $RCend = $("#RCend")
+                RCa = $("#RCa").val()
+                RCb = $("#RCb").val()
+                if (RCb < 0) {
+                    $RCend.text("Undefined")
+                } else {
+                    $RCend.text(Math.pow(RCb, (1 / RCa)))
+                }
+            }
+            var QCcalc1 = function () {
+                $QCend1 = $("#QCend1")
+                QCa = $("#QCa").val()
+                QCb = $("#QCb").val()
+                if (QCa == 0) {
+                    $QCend1.text("Undefined")
+                } else {
+                    $QCend1.text(-1 * (QCb / (2 * QCa)))
+                }
+            }
+            var QCcalc2 = function () {
+                $QCend2 = $("#QCend2")
+                QCa = $("#QCa").val()
+                QCb = $("#QCb").val()
+                QCc = $("#QCc").val()
+                if (QCa == 0) {
+            		$QCend2.text("Undefined")
+                } else {
+                    ansa = 0
+                    ansb = 0
+                    ans = 0
+                    ans = Math.pow(QCb, 2) - (4 * QCa * QCc)
+                    if (ans >= 0) {
+                        ansa = ((-1 * QCb) + Math.sqrt(ans) / (2 * QCa))
+                        ansb = ((-1 * QCb) - Math.sqrt(ans) / (2 * QCa))
+                        $QCend2.text("x= " + ansa.toString() + " and x= " + ansb.toString())
+                    } else {
+            			$QCend2.text("No Solution")
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
