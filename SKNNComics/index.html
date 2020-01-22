@@ -1,0 +1,45 @@
+<html>
+	<head>
+        <style>
+            body {
+                background-color: #dfdf00;
+                text-align: center;
+            }
+            p {
+                font-family: "Comic Sans MS";
+            }
+        </style>
+    </head>
+    <body>
+        <p id="comicName">Name</p>
+        <p id="comicNumber">000</p>
+        <img id="comicImage">
+        <br>
+        <img id="buttonFirst" src="ArrowFirst.png" onclick="setPage(1)">
+        <img id="buttonPrev" src="ArrowPrev.png" onclick="setPage(comicNum-1)">
+        <img id="buttonNext" src="ArrowNext.png" onclick="setPage(comicNum+1)">
+        <img id="buttonLast" src="ArrowRecent.png" onclick="setPage(comicList.length - 1)">
+        <script src="comicNames.js"></script>
+        <script>
+            var nameEl = document.getElementById("comicName");
+            var numEl = document.getElementById("comicNumber");
+            var imgEl = document.getElementById("comicImage");
+            var comicNum;
+            var url = new URL(window.location);
+            var queryParams = new URLSearchParams(url.search);
+            var refresh = function() {
+                comicNum = parseInt(queryParams.get("p"));
+                numEl.innerText = "#" + comicNum;
+                nameEl.innerText = comicList[comicNum]
+                imgEl.src = "images/" + comicNum + ".png";
+            }
+            var setPage = function(pageNum) {
+                if (pageNum >= 0 && pageNum <= comicList.length - 1) {
+                    queryParams.set("p", pageNum);
+                    refresh();
+                }
+            }
+            refresh();
+        </script></script>
+    </body>
+</html>
