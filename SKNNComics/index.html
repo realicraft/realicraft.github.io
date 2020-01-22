@@ -29,7 +29,7 @@
             var queryParams = new URLSearchParams(url.search);
             var refresh = function() {
                 comicNum = parseInt(queryParams.get("p"));
-                if (comicNum = NaN) {
+                if (comicNum === NaN) {
                     comicNum = 1
                 }
                 numEl.innerText = "#" + comicNum;
