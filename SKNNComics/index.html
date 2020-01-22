@@ -31,6 +31,7 @@
                 comicNum = parseInt(queryParams.get("p"));
                 if (comicNum === NaN) {
                     comicNum = 1
+                    queryParams.set("p", 1);
                 }
                 numEl.innerText = "#" + comicNum;
                 nameEl.innerText = comicList[comicNum]
