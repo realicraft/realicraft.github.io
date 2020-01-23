@@ -29,9 +29,9 @@
             var queryParams = new URLSearchParams(url.search);
             var refresh = function() {
                 comicNum = parseInt(queryParams.get("p"));
-                if (comicNum === NaN) {
+                if (isNaN(comicNum)) {
                     comicNum = 1
-                    queryParams.set("p", 1);
+                    queryParams.append("p", 1);
                 }
                 numEl.innerText = "#" + comicNum;
                 nameEl.innerText = comicList[comicNum]
