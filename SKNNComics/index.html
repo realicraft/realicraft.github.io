@@ -32,6 +32,7 @@
                 if (isNaN(comicNum)) {
                     comicNum = 1
                     queryParams.append("p", 1);
+                    window.location.replace(document.URL + "?p=1");
                 }
                 numEl.innerText = "#" + comicNum;
                 nameEl.innerText = comicList[comicNum]
