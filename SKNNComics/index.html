@@ -35,8 +35,7 @@
                     window.location.replace(document.URL + "?p=1");
                 }
                 if (comicNum < 0 || comicNum >= comicList.length) {
-                    comicNum = 1
-                    queryParams.set("p", 1);
+                    window.location.replace("index.html?p=1");
                 }
                 numEl.innerText = "#" + comicNum;
                 nameEl.innerText = comicList[comicNum]
