@@ -2,8 +2,14 @@
 	<head>
         <style>
             body {
+                background-color: #cfcfcf;
+            }
+            div {
                 background-color: #dfdf00;
                 text-align: center;
+                width: 650px;
+                margin: auto;
+                border-radius: 25px;
             }
             p {
                 font-family: "Comic Sans MS";
@@ -11,44 +17,48 @@
         </style>
     </head>
     <body>
-        <img id=logo src="Logo.png">
-        <p id="comicName">Name</p>
-        <p id="comicNumber">000</p>
-        <img id="comicImage">
-        <br>
-        <img id="buttonFirst" src="ArrowFirst.png" onclick="setPage(1)">
-        <img id="buttonPrev" src="ArrowPrev.png" onclick="setPage(comicNum-1)">
-        <img id="buttonNext" src="ArrowNext.png" onclick="setPage(comicNum+1)">
-        <img id="buttonLast" src="ArrowRecent.png" onclick="setPage(comicList.length - 1)">
-        <script src="comicNames.js"></script>
-        <script>
-            var nameEl = document.getElementById("comicName");
-            var numEl = document.getElementById("comicNumber");
-            var imgEl = document.getElementById("comicImage");
-            var comicNum;
-            var url = new URL(window.location);
-            var queryParams = new URLSearchParams(url.search);
-            var refresh = function() {
-                comicNum = parseInt(queryParams.get("p"));
-                if (isNaN(comicNum)) {
-                    comicNum = 1
-                    queryParams.append("p", 1);
-                    window.location.replace(document.URL + "?p=1");
+        <div>
+            <img id=logo src="Logo.png">
+            <p id="comicName">Name</p>
+            <p id="comicNumber">000</p>
+            <img id="comicImage">
+            <br>
+            <img id="buttonFirst" src="ArrowFirst.png" onclick="setPage(1)">
+            <img id="buttonPrev" src="ArrowPrev.png" onclick="setPage(comicNum-1)">
+            <img id="buttonNext" src="ArrowNext.png" onclick="setPage(comicNum+1)">
+            <img id="buttonLast" src="ArrowRecent.png" onclick="setPage(comicList.length - 1)">
+            <br>
+            <a href="https://shefwerld.github.io/shefkirb/index.html"><img id="kerbi" src="Kerbi.png"></a>
+            <script src="comicNames.js"></script>
+            <script>
+                var nameEl = document.getElementById("comicName");
+                var numEl = document.getElementById("comicNumber");
+                var imgEl = document.getElementById("comicImage");
+                var comicNum;
+                var url = new URL(window.location);
+                var queryParams = new URLSearchParams(url.search);
+                var refresh = function() {
+                    comicNum = parseInt(queryParams.get("p"));
+                    if (isNaN(comicNum)) {
+                        comicNum = 1
+                        queryParams.append("p", 1);
+                        window.location.replace(document.URL + "?p=1");
+                    }
+                    if (comicNum < 0 || comicNum >= comicList.length) {
+                        window.location.replace("index.html?p=1");
+                    }
+                    numEl.innerText = "#" + comicNum;
+                    nameEl.innerText = comicList[comicNum]
+                    imgEl.src = "images/" + comicNum + ".png";
                 }
-                if (comicNum < 0 || comicNum >= comicList.length) {
-                    window.location.replace("index.html?p=1");
+                var setPage = function(pageNum) {
+                    if (pageNum >= 0 && pageNum <= comicList.length - 1) {
+                        queryParams.set("p", pageNum);
+                        refresh();
+                    }
                 }
-                numEl.innerText = "#" + comicNum;
-                nameEl.innerText = comicList[comicNum]
-                imgEl.src = "images/" + comicNum + ".png";
-            }
-            var setPage = function(pageNum) {
-                if (pageNum >= 0 && pageNum <= comicList.length - 1) {
-                    queryParams.set("p", pageNum);
-                    refresh();
-                }
-            }
-            refresh();
-        </script></script>
+                refresh();
+            </script>
+        </div>
     </body>
 </html>
