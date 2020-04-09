@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<style>
+			body {
+				background-color: #4f4f4f;
+				margin: 0;
+				text-align: center;
+			}
+			p {
+				font-family: Arial, Helvetica, sans-serif 
+				/* Recomended by Visual Studio Code */
+			}
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                font-family: monospace;
+                font-size: 17px;
+            }
+            table {
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px
+            }
+            th {
+                text-align: left;
+            }
+            th, td {
+                max-width: 400px;
+            }
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px
+            }
+		</style>
+	</head>
+	<body>
+        <img src="fs3_logo.png">
+        <table id="player_stats">
+            <tr>
+                <th>Username</th>
+                <th>HP</th>
+                <th>Max HP</th>
+                <th>Kills</th>
+                <th>Deaths</th>
+                <th>Effect 1</th>
+            </tr>
+            <tr>
+                <td>realicraft</td>
+                <td>100</td>
+                <td>100</td>
+                <td>0</td>
+                <td>0</td>
+                <td>None</td>
+            </tr>
+        </table>
+        <table id="effects">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Common Causes</th>
+            </tr>
+            <tr>
+                <td>None</td>
+                <td>You don't have an effect here.</td>
+                <td>Not having an effect.</td>
+            </tr>
+            <tr>
+                <td>KOd</td>
+                <td>You've been knocked out, causing you to be out of play for three turns.</td>
+                <td>HP reaching 0</td>
+            </tr>
+        </table>
+	</body>
+</html>
