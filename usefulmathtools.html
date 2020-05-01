@@ -25,9 +25,12 @@
         <h2>Root Calculator</h2>
         <!-- ID: RC -->
         <input type="number" placeholder="a" id="RCa"><p>√ </p><input type="number" placeholder="b" id="RCb"><button onClick="RCcalc()">Calculate</button><p id="RCend"></p>
-        <h2>Quadratic Calacultor</h2>
+        <h2>Quadratic Calculator</h2>
         <!-- ID: QC -->
         <input type="number" placeholder="a" id="QCa"><p>x²+</p><input type="number" placeholder="b" id="QCb"><p>x+</p><input type="number" placeholder="c" id="QCc"><p>=0</p><button onClick="QCcalc1()">Calculate Axis of Symmetry</button><button onClick="QCcalc2()">Calculate Answers</button><p id="QCend1"></p><p> </p><p id="QCend2"></p>
+        <h2>Area of an N-Gon Calculator</h2>
+        <!-- ID: NG -->
+        <p>Sides: </p><input type="number" placeholder="a" id="NGa"><p> Side Length:</p><input type="number" placeholder="b" id="NGb"><button onClick="NGcalc()">Calculate</button><p id="NGend"></p>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
             var SLcalc = function () {
@@ -83,6 +86,20 @@
                     } else {
             			$QCend2.text("No Solution")
                     }
+                }
+            }
+            var NGcalc = function () {
+                $NGend = $("#NGend")
+                NGa = $("#NGa").val()
+                NGb = $("#NGb").val()
+                if (NGb <= 0 || NGa < 3 || Math.floor(NGa) != NGa) {
+                    $NGend.text("Undefined")
+                } else {
+                    NGang = (360 / NGa) * 0.5
+                    NGper = NGa * NGb
+                    NGlen = NGb / 2
+                    NGtan = NGlen / Math.tan(NGang * Math.PI/180)
+                    $NGend.text(0.5 * NGtan * NGper)
                 }
             }
         </script>
