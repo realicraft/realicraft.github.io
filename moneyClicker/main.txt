@@ -7,4 +7,4 @@ Let's make a game!
     version: 0.01
 
 Settings
-    building cost refund:0.000000000000000000000000000%
+    building cost refund:0.000000000000000000000000001%
