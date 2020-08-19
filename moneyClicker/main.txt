@@ -1,6 +1,6 @@
 Let's make a game!
     name:Money Clicker 2
-    author:Reali
+    by:Reali
     desc:The sequel to "Money Clicker", a clicker game on Scratch. (https://scratch.mit.edu/projects/196293393/)
     created:18/08/2020
     updated:18/08/2020
