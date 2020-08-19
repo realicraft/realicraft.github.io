@@ -18,7 +18,7 @@ Buttons
     *mainButton|moneyButton
         name:Money
         desc:Click to gain money. Pretty simple.
-        on click: yield 1 money
+        on click:yield 1 money
 
 Achievements
     *getMoney
