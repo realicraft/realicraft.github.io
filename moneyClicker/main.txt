@@ -8,3 +8,20 @@ Let's make a game!
 
 Settings
     building cost refund:0.000000000000000000000000001%
+
+Resources
+    *money|Money|
+        name:Money|Money
+        desc:It's money. You know, currency?
+
+Buttons
+    *mainButton|moneyButton
+        name:Money
+        desc:Click to gain money. Pretty simple.
+        on click: yield 1 money
+
+Achievements
+    *getMoney
+        name:Got Money
+        desc:Got some money.
+        req:1 money
