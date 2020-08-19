@@ -21,7 +21,7 @@ Buttons
     *mainButton|moneyButton
         name:Money
         desc:Click to gain money. Pretty simple.
-        icon:mainSheet[0,0]
+        icon:https://realicraft.github.io/moneyClicker/BigMoney.png
         class:bigButton hasFlares
         on click:yield 1 money
 
