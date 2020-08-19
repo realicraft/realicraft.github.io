@@ -9,20 +9,24 @@ Let's make a game!
 Settings
     building cost refund:0.000000000000000000000000001%
     spritesheet:mainSheet, 48 by 48, https://realicraft.github.io/moneyClicker/MoneyClicker%20Spritesheet.png
+    stylesheet:stuff/bigBlue.css
 
 Resources
     *money|Money
         name:Money|Money
         desc:It's money. You know, currency?
+        icon:mainSheet[0,0]
 
 Buttons
     *mainButton|moneyButton
         name:Money
         desc:Click to gain money. Pretty simple.
+        icon:mainSheet[0,0]
         on click:yield 1 money
 
 Achievements
     *getMoney
         name:Got Money
         desc:Got some money.
+        icon:mainSheet[0,0]
         req:1 money
