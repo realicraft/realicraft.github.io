@@ -10,7 +10,7 @@ Settings
     building cost refund:0.000000000000000000000000001%
 
 Resources
-    *money|Money|
+    *money|Money
         name:Money|Money
         desc:It's money. You know, currency?
 
