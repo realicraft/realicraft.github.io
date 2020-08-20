@@ -19,7 +19,7 @@ Resources
     *moneyPerClick
         name:moneyPerClick|moniesPerClick
         desc:You shouldn't see this
-        always hidden
+      //always hidden
         start with:100
 
 Buildings
