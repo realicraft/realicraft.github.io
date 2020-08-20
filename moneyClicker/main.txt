@@ -26,7 +26,7 @@ Buildings
         req:1 money
         on earn:multiply yield of mainButton by (11/10)
         on lose:multiply yield of mainButton by (10/11)
-        icon:mainSheet[0,2], mainSheet[0,3], mainSheet[0,1]
+        icon:mainSheet[0,1], mainSheet[0,3], mainSheet[0,2]
 
 Buttons
     *mainButton|moneyButton
