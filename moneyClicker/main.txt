@@ -20,6 +20,7 @@ Resources
         name:moneyPerClick|moniesPerClick
         desc:You shouldn't see this
         always hidden
+        start with:100
 
 Buildings
     *lucky|Lucky
