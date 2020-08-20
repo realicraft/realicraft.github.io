@@ -22,7 +22,7 @@ Buildings
         name:Lucky
         desc:Improve your luck, increasing how much money you get.
         cost increase:125%
-        cost:5 money
+        cost:500 money
         req:1 money
         on earn:multiply yield of mainButton by (11/10)
         on lose:multiply yield of mainButton by (10/11)
@@ -34,7 +34,7 @@ Buttons
         desc:Click to gain money. Pretty simple.
         icon:https://realicraft.github.io/moneyClicker/BigMoney.png
         class:bigButton hasFlares
-        on click:yield 1 money
+        on click:yield 100 money
 
 Achievements
     *getMoney
