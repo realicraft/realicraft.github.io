@@ -4,7 +4,7 @@ Let's make a game!
     desc:The sequel to "Money Clicker", a clicker game on Scratch. (https://scratch.mit.edu/projects/196293393/)
     created:18/08/2020
     updated:18/08/2020
-    version: 0.031
+    version: 0.032
 
 Settings
     building cost refund:0.000000000000000000000000001%
@@ -19,7 +19,7 @@ Resources
     *moneyPerClick
         name:moneyPerClick|moniesPerClick
         desc:You shouldn't see this
-      //always hidden
+        always hidden
         start with:100
 
 Buildings
