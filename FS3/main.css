@@ -1,0 +1,11 @@
+body {
+    background-color: #4f4f4f;
+    margin: 0;
+    text-align: center;
+    font-family: monospace
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px
+}

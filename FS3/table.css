@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 17px;
+}
+table {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px
+}
+th, td {
+    max-width: 400px;
+}
+td>img {
+    margin-top: 0px;
+    background-color: #7f7f7f;
+}
