@@ -15,22 +15,31 @@
             p {
                 display: inline;
             }
+            div {
+                display: inline-block;
+            }
+            .output {
+                background-color: #bfbfbf;
+                width: 100px;
+                height: 1em;
+                outline: solid 2px #7f7f7f;
+            }
         </style>
     </head>
     <body>
         <h1>Useful Math Tools</h1>
         <!-- ID: SL -->
         <h2>Slope Calculator</h2>
-        <p>Point 1: (</p><input type="number" placeholder="x" id="SLxa"><p>,</p><input type="number" placeholder="y" id="SLya"><p>) Point 2: (</p><input type="number" placeholder="x" id="SLxb"><p>,</p><input type="number" placeholder="y" id="SLyb"><p>)</p><button onClick="SLcalc()">Calculate</button><p id="SLend"></p>
+        <p>Point 1: (</p><input type="number" placeholder="x" id="SLxa"><p>,</p><input type="number" placeholder="y" id="SLya"><p>) Point 2: (</p><input type="number" placeholder="x" id="SLxb"><p>,</p><input type="number" placeholder="y" id="SLyb"><p>)</p><button onClick="SLcalc()">Calculate</button><div id="SLend" class="output"></div>
         <!-- ID: RC -->
         <h2>Root Calculator</h2>
-        <input type="number" placeholder="a" id="RCa"><p>√ </p><input type="number" placeholder="b" id="RCb"><button onClick="RCcalc()">Calculate</button><p id="RCend"></p>
+        <input type="number" placeholder="a" id="RCa"><p>√ </p><input type="number" placeholder="b" id="RCb"><button onClick="RCcalc()">Calculate</button><div id="RCend" class="output"></div>
         <!-- ID: QC -->
         <h2>Quadratic Calculator</h2>
-        <input type="number" placeholder="a" id="QCa"><p>x²+</p><input type="number" placeholder="b" id="QCb"><p>x+</p><input type="number" placeholder="c" id="QCc"><p>=0</p><button onClick="QCcalc1()">Calculate Axis of Symmetry</button><button onClick="QCcalc2()">Calculate Answers</button><p id="QCend1"></p><p> </p><p id="QCend2"></p>
+        <input type="number" placeholder="a" id="QCa"><p>x²+</p><input type="number" placeholder="b" id="QCb"><p>x+</p><input type="number" placeholder="c" id="QCc"><p>=0</p><button onClick="QCcalc1()">Calculate Axis of Symmetry</button><button onClick="QCcalc2()">Calculate Answers</button><div id="QCend1" class="output"></div><p> </p><div id="QCend2" class="output"></div>
         <!-- ID: NG -->
         <h2>Area of a regular N-Gon Calculator</h2>
-        <p>Sides: </p><input type="number" placeholder="a" id="NGa"><p> Side Length:</p><input type="number" placeholder="b" id="NGb"><p> Radius:</p><input type="number" placeholder="c" id="NGc"><button onClick="NGcalc1()">Calculate (Side Length)</button><button onClick="NGcalc2()">Calculate (Radius)</button><p id="NGend1"></p><p> </p><p id="NGend2"></p>
+        <p>Sides: </p><input type="number" placeholder="a" id="NGa"><p> Side Length:</p><input type="number" placeholder="b" id="NGb"><p> Radius:</p><input type="number" placeholder="c" id="NGc"><button onClick="NGcalc1()">Calculate (Side Length)</button><button onClick="NGcalc2()">Calculate (Radius)</button><div id="NGend1" class="output"></div><p> </p><div id="NGend2" class="output"></div>
         <!-- ID: EC -->
         <h2>Line Equation Converter</h2>
         <h3>Slope-Intercept Form</h3>
