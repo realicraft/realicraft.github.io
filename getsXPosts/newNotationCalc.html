@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>newNotationCalc</title>
+        <style>
+            body {text-align: center;}
+            input, p {display: inline;}
+            button, input {border-radius: 3px;}
+            #output {width: calc(95% - 30px)}
+        </style>
+    </head>
+    <body>
+        <h1>newNotationCalc</h1>
+        <p>Input:</p><input id="input">
+        <br>
+        <p>Output:</p><input id="output">
+        <br>
+        <button onclick="mainFunc2()">Convert</button>
+        <script src="newNotationCalc.js"></script>
+        <script>
+            var mainFunc2 = function() {
+                inputEl = document.getElementById("input");
+                outputEl = document.getElementById("output");
+                outputEl.value = mainFunc(inputEl.value);
+            };
+        </script>
+    </body>
+</html>
