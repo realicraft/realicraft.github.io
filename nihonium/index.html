@@ -66,8 +66,8 @@
         <div class="command">
             <pre>nh!{dice|roll} num sides</pre>
             <ul>
-                <li class="input_int"><em>num</em> (int >=1): The number of dice.</li>
-                <li class="input_int"><em>sides</em> (int >=1): The number of sides on the dice.</li>
+                <li class="input_int"><em>num</em> (int >=1): The number of dice. Defaults to 1.</li>
+                <li class="input_int"><em>sides</em> (int >=1): The number of sides on the dice. Defaults to 20.</li>
             </ul>
             <p>Rolls <em>num</em> <em>sides</em>-sided dice, and gives you the result.</p>
         </div>
@@ -78,6 +78,13 @@
         <div class="command">
             <pre>nh!help</pre>
             <p>Returns a list of the commands Nihonium supports.</p>
+        </div>
+        <div class="command">
+            <pre>nh!suggest *suggestion</pre>
+            <ul>
+                <li class="input_str"><em>*suggestion</em> (str, allows spaces): The suggestion you want to make.</li>
+            </ul>
+            <p>Make a suggestion on what to add to Nihonium.</p>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </body>
