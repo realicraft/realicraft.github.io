@@ -2,61 +2,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Main Page</title>
-        <style>
-            body {
-                background: #f7efdf;
-                font-family: sans-serif;
-            }
-            input {
-                display: inline;
-                width: 30px;
-            }
-            p {
-                display: inline;
-            }
-            div.command {
-                border: 5px solid white;
-                border-radius: 12px;
-                background: #fffbf3;
-                padding: 5px;
-                margin-left: 10px;
-                margin-right: 10px;
-                margin-bottom: 15px;
-            }
-            div.command pre {
-                margin: 0px;
-            }
-            div.command ul {
-                padding: 0px;
-            }
-            div.command li {
-                padding-left: 40px;
-                list-style: none;
-                margin: 0;
-            }
-            li.input_int {
-                background: url("input_types/inputInt.png") no-repeat 0px 0px;
-            }
-            li.input_float {
-                background: url("input_types/inputFloat.png") no-repeat 0px 0px;
-            }
-            li.input_str {
-                background: url("input_types/inputStr.png") no-repeat 0px 0px;
-            }
-            li.input_bool {
-                background: url("input_types/inputBool.png") no-repeat 0px 0px;
-            }
-            li.input_b64 {
-                background: url("input_types/inputB64.png") no-repeat 0px 0px;
-            }
-            li.input_img {
-                background: url("input_types/inputImg.png") no-repeat 0px 0px;
-            }
-        </style>
+        <title>Commands | Nihonium</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <h1>Nihonium</h1>
+        <div id="header">
+            <div id="head-left">
+                <h1>Nihonium</h1>
+            </div><div id="head-right">
+                <a href="index.html">Commands</a><p> | </p><a href="updates.html">Updates</a><p> | </p><a href="about.html">About</a><p> | </p><a href="https://github.com/realicraft/Nihonium">Repository</a>
+            </div>
+        </div>
         <h3><em>A bot for the TBGs</em></h3>
         <br><br>
         <div class="command">
