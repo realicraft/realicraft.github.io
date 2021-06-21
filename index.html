@@ -2,29 +2,50 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Main Page</title>
-        <style>
-            body {
-                background: #ffff00;
-                font-family: sans-serif;
-            }
-            input {
-                display: inline;
-                width: 30px;
-            }
-            p {
-                display: inline;
-            }
-        </style>
+        <title>Commands | Nihonium</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <h1>Main Page</h1>
-        <a href="usefulmathtools.html">Useful Math Tools</a>
-        <a href="/FS3">Fighting Simulator 3</a>
-        <a href="/SKNNComics">SKNN Comics</a>
-        <a href="/getsXPosts">If this gets a Post ID of <em>X</em>, we advance!</a>
-        <a href="/moneyClicker">Money Clicker</a>
-        <a href="/nihonium">Nihonium</a>
-        <a href="/universeManager">Universe Manager</a>
+        <div id="header">
+            <div id="head-left">
+                <h1>Nihonium</h1>
+            </div><div id="head-right">
+                <a href="index.html">Commands</a><p> | </p><a href="updates.html">Updates</a><p> | </p><a href="about.html">About</a><p> | </p><a href="https://github.com/realicraft/Nihonium">Repository</a>
+            </div>
+        </div>
+        <h3><em>A bot for the TBGs</em></h3>
+        <br><br>
+        <div class="command">
+            <pre>nh!coin</pre>
+            <p>Flips a coin and gives you the result.</p>
+        </div>
+        <div class="command">
+            <pre>nh!{dice|roll} num sides</pre>
+            <ul>
+                <li class="input_int"><em>num</em> (int >=1): The number of dice. Defaults to 1.</li>
+                <li class="input_int"><em>sides</em> (int >=1): The number of sides on the dice. Defaults to 20.</li>
+            </ul>
+            <p>Rolls <em>num</em> <em>sides</em>-sided dice, and gives you the result.</p>
+        </div>
+        <div class="command">
+            <pre>nh!bot</pre>
+            <p>Returns various statistics about the bot.</p>
+        </div>
+        <div class="command">
+            <pre>nh!help</pre>
+            <p>Returns a list of the commands Nihonium supports.</p>
+        </div>
+        <div class="command">
+            <pre>nh!suggest *suggestion</pre>
+            <ul>
+                <li class="input_str"><em>*suggestion</em> (str, allows spaces): The suggestion you want to make.</li>
+            </ul>
+            <p>Make a suggestion on what to add to Nihonium.</p>
+        </div>
+        <div class="command">
+            <pre>nh!threadInfo</pre>
+            <p>Returns a list of various information about the thread the command was called in.</p>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </body>
+</html>
