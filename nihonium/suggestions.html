@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Updates | Nihonium</title>
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .added {
+                color: #1fdf1f
+            }
+            .considered {
+                color: #cfcf0f
+            }
+            .soon {
+                color: #1f1fdf
+            }
+            .delayed {
+                color: #0f0f6f
+            }
+            .denied {
+                color: #df1f1f
+            }
+            .undecided {
+                color: #9f9f9f
+            }
+            .suggestion_num {
+                background-color: #3f3f3f;
+                border: #0f0f0f solid 4px;
+                border-radius: 10px;
+                color: #fff;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 11px;
+            }
+            .command pre {
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="head-left">
+                <h1>Nihonium</h1>
+            </div><div id="head-right">
+                <a href="index.html">Commands</a><p> | </p><a href="updates.html">Updates</a><p> | </p><a href="about.html">About</a><p> | </p><a href="suggestions.html">Suggestions</a><p> | </p><a href="https://github.com/realicraft/Nihonium">Repository</a>
+            </div>
+        </div>
+        <h3><em>A bot for the TBGs</em></h3>
+        <br><br>
+        <h4>Actual Suggestions</h4>
+        <!--
+            J1 this is a test
+            J2 add vertical slabs
+            J3 *where do the suggestions go?
+            S1 Prediction of advance or something
+            J4 more cave ambient sounds
+            S2 allow the bot to post in tgoradaswh
+            J5 add cloud lists
+            S3 Allow rolling on TBGs Play monopoly
+            J6
+            S4 Post reminder (like "notify me at post 100000 to do something")
+            S5 make the bot respond faster
+        -->
+        <div class="command">
+            <div class="suggestion_num">S1</div>
+            <pre>Prediction of advance or something</pre><br />
+            <p>Status: </p><p class="added">Added</p><br />
+            <p>As of 0.5.2, <em>nh!threadInfo</em> has a section for Estimated Completion Date.</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">S2</div>
+            <pre>allow the bot to post in tgoradaswh</pre><br />
+            <p>Status: </p><p class="undecided">Undecided</p><br />
+            <p>Beyond the ability to roll a dice, it's unclear what advantage this would have.</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">S3</div>
+            <pre>Allow rolling on TBGs Play monopoly</pre><br />
+            <p>Status: </p><p class="considered">Considered</p><br />
+            <p>The ability to call a command and have dice be rolled would be useful, but the bot only posts at a speed of once every 30 minutes, likely too slow for gameplay.</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">S4</div>
+            <pre>Post reminder (like "notify me at post 100000 to do something")</pre><br />
+            <p>Status: </p><p class="undecided">Undecided</p><br />
+            <p>This could be useful, but would require a database or JSON file to keep track of reminders, and there's a risk of reminders being dropped due to crashes.</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">S5</div>
+            <pre>make the bot respond faster</pre><br />
+            <p>Status: </p><p class="considered">Considered</p><br />
+            <p>The current speed is quite slow, but this is to prevent inflating the view count of the threads, which is unavoidable with the way the bot gathers data.
+                On average, the bot views around 2 or 3 pages per visit, though this could be increased by downtime or spikes in activity.</p>
+        </div>
+        <h4>Joke Suggestions</h4>
+        <div class="command">
+            <div class="suggestion_num">J1</div>
+            <pre>this is a test</pre><br />
+            <p>looks like it works</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">J2</div>
+            <pre>add vertical slabs</pre><br />
+            <p>Hold on while I relay this to Mojang.</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">J3</div>
+            <pre>*where do the suggestions go?</pre><br />
+            <p>To <em>suggestions.txt</em>, and eventually here.</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">J4</div>
+            <pre>more cave ambient sounds</pre><br />
+            <p>You get <em>bell()</em>, take it or leave it.</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">J5</div>
+            <pre>add cloud lists</pre><br />
+            <p>Status: </p><p class="denied">Denied</p><br />
+            <p>Databases are hard.</p>
+        </div>
+        <div class="command">
+            <div class="suggestion_num">J6</div>
+            <pre>&lt;empty line&gt;</pre><br />
+            <p>Status: </p><p class="added">Added</p><br />
+            <p>What an amazing suggestion!</p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </body>
+</html>
