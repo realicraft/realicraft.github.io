@@ -50,6 +50,7 @@ div#head-left {
 div#head-right {
     width: 50%;
     height: 40px;
+    max-height: 40px;
     right: 0px;
     display: inline-block;
     vertical-align: middle;
