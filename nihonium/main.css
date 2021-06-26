@@ -55,7 +55,7 @@ div#head-right {
     display: inline-block;
     vertical-align: middle;
     text-align: right;
-    overflow: scroll;
+    overflow-y: auto;
 }
 div#head-right p, div#head-right a {
     line-height: 40px;
