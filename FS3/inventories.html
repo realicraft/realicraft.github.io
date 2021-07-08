@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="main.css"></link>
         <link rel="stylesheet" type="text/css" href="table.css"></link>
+        <link rel="stylesheet" type="text/css" href="tooltip.css"></link>
         <style>
             td {
                 max-width: 200px;
@@ -10,7 +11,15 @@
     </head>
     <body>
         <img src="CurrentLogo/logo.png">
-        <table id="player_stats">
+        <br />
+        <div id="header">
+            <a href="info.html">Info</a>
+            <a href="inventories.html">Inventories</a>
+            <a href="stats.html">Stats</a>
+            <a href="structures.html">Structures</a>
+            <a href="voting.html">Voting</a>
+        </div>
+        <!--<table id="player_stats">
             <tr>
                 <th> </th>
                 <th colspan="3">Slot 1</th>
@@ -64,6 +73,79 @@
                 <td colspan="3">Empty</td>
                 <td colspan="3">Empty</td>
             </tr>
+        </table>-->
+        <table id="player_inv">
+            <tr>
+                <td class="inv_user">realicraft</td>
+                <td class="inv_space"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+            </tr>
+            <tr>
+                <td class="inv_user">Joyous Theta</td>
+                <td class="inv_space"></td>
+                <td class="inv_item"><img src="Items/Exported/potted_bean_can_bush.png" onmouseover='tooltip("Potted Canned Bean Bush", "A bush that grows cans of beans. In a pot.", "Unknown");' onmouseout="notooltip()"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+            </tr>
+            <tr>
+                <td class="inv_user">SausageMcSausage</td>
+                <td class="inv_space"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+            </tr>
+            <tr>
+                <td class="inv_user">CatsUnited</td>
+                <td class="inv_space"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+            </tr>
+            <tr>
+                <td class="inv_user">Squrrelflight</td>
+                <td class="inv_space"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+                <td class="inv_item"></td>
+            </tr>
         </table>
+        <div class="tooltip_body">
+            <h3 class="tooltip_name">Item Name</h3><br /><br />
+            <p class="tooltip_desc">Item description. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br /><br />
+            <p class="tooltip_src1">Source: </p><p class="tooltip_src2">Item source</p>
+        </div>
+        <script src="tooltip.js"></script>
 	</body>
 </html>
