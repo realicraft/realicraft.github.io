@@ -15,7 +15,9 @@ FS3
 7 | The /Base Under the Island/ is created.
   | The /Cave/ and /Tunnel/ are created in the /Base Under the Island/.
   | The /Oven Underneath the Island/ is moved into the /Base Under the Island/.
-8 | <not completed>
+8 | Nothing significant.
+9 | Nothing significant.
+10| <not completed>
 
 FS1
 1 | realicraft, TheGuy, sneezingdog4, and Huzbubber Tim all join.
