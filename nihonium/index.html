@@ -15,7 +15,7 @@
             </div>
         </div>
         <h3><em>A bot for the TBGs</em></h3>
-        <br><br>
+        <br><p>All command names are case-insensitive.</p><br>
         <div class="command">
             <pre>nh!coin</pre>
             <p>Flips a coin and gives you the result.</p>
@@ -44,7 +44,7 @@
             <p>Make a suggestion on what to add to Nihonium.</p>
         </div>
         <div class="command">
-            <pre>nh!{threadInfo|threadinfo}</pre>
+            <pre>nh!threadInfo</pre>
             <p>Returns a list of various information about the thread the command was called in.</p>
         </div>
         <div class="command">
@@ -117,6 +117,13 @@
                 <pre>list</pre>
                 <p>List all files. <em>*other</em> and <em>filename</em> are both unused.</p>
             </div>
+        </div>
+        <div class="command">
+            <pre>nh!estimate tID</pre>
+            <ul>
+                <li class="input_int"><em>tID</em> (int): The thread you want an estimation for. Defaults to the current thread.</li>
+            </ul>
+            <p>Give an estimation on when a thread will be completed. Not available on some threads.</p>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </body>
