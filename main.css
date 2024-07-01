@@ -1,0 +1,40 @@
+body {
+    background: #efbf2f;
+    font-family: sans-serif;
+    text-align: center;
+}
+input {
+    display: inline;
+    width: 30px;
+}
+#logo {
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #2f1f00;
+    font-weight: bold;
+}
+.container {
+    border: 5px solid #0000008f;
+    border-radius: 8px;
+    background-color: #ffffff4f;
+    width: 800px;
+    margin: auto;
+}
+.container h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.container p {
+    margin-bottom: 3px;
+}
+ul, ol {
+    text-align: left;
+}
+.container ul, .container ol {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.small {
+    font-size: 0.8em;
+}
