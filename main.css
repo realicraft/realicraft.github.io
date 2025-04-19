@@ -1,5 +1,8 @@
+html {
+    min-height: 100%;
+}
 body {
-    background: #efbf2f;
+    background: linear-gradient(0deg, #efaf2f, #efcf2f);
     font-family: sans-serif;
     text-align: center;
 }
@@ -13,6 +16,7 @@ input {
     margin-bottom: 5px;
     color: #2f1f00;
     font-weight: bold;
+    font-family: "Comic Sans MS";
 }
 .container {
     border: 5px solid #0000008f;
@@ -28,6 +32,9 @@ input {
 .container p {
     margin-bottom: 3px;
 }
+.container h2 + p {
+    margin-top: 5px;
+}
 ul, ol {
     text-align: left;
 }
@@ -37,4 +44,21 @@ ul, ol {
 }
 .small {
     font-size: 0.8em;
+}
+.container table {
+    width: 90%;
+    margin: auto;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.container td {
+    border: 1px solid #000000;
+}
+.container tr td:first-child {
+    text-align: left;
+}
+.container tr td:last-child {
+    text-align: right;
 }
