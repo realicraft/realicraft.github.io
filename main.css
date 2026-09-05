@@ -62,3 +62,13 @@ ul, ol {
 .container tr td:last-child {
     text-align: right;
 }
+article {
+    position: relative;
+}
+article time {
+    font-size: 0.8em;
+}
+.float-right {
+    position: absolute;
+    right: 10px;
+}
