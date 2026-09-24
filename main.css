@@ -3,6 +3,7 @@ html {
 }
 body {
     background: linear-gradient(0deg, #efaf2f, #efcf2f);
+    background-attachment: fixed;
     font-family: sans-serif;
     text-align: center;
 }
@@ -22,8 +23,11 @@ input {
     border: 5px solid #0000008f;
     border-radius: 8px;
     background-color: #ffffff4f;
-    width: 800px;
+    background: linear-gradient(0deg, #ffffff2f, #ffffff5f);
+    width: 790px;
     margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .container h2 {
     margin-top: 2px;
@@ -53,14 +57,20 @@ ul, ol {
     margin-top: 3px;
     margin-bottom: 3px;
 }
-.container td {
+.container td, .container th {
     border: 1px solid #000000;
 }
 .container tr td:first-child {
     text-align: left;
+    padding-left: 4px;
 }
-.container tr td:last-child {
+.container tr td:nth-child(2) {
     text-align: right;
+    padding-right: 4px;
+}
+.container table.right_cell_left_aligned tr td:nth-child(2) {
+    text-align: left;
+    padding-left: 4px;
 }
 article {
     position: relative;
@@ -71,4 +81,8 @@ article time {
 .float-right {
     position: absolute;
     right: 10px;
+}
+.click_to_view_full {
+    margin-top: 0px;
+    font-size: 0.8em;
 }
